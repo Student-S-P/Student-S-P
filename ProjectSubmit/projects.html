@@ -1,0 +1,89 @@
+<!-- File name:     projects.html
+     Author:        Seth Peterson
+     Date:          2018/2/1
+     lwtech e-mail: s-seth.peterson@lwtech.edu
+     Assignment:    Final Project
+     Description:
+
+ This file is the projects page for the Class Webpage
+//-->
+
+<!doctype html>
+
+<html>
+  <!-- This area provides instructions to the browser. -->
+  <head>
+    <meta charset = "UTF-8">
+    <title>HTML Class Gallery</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/projects.css">
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/sharedFeatures.js"></script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header id="header">
+	<img src="images/pause.png" alt="class logo">
+	<h1>Projects - Seth Peterson</h1>
+      </header>
+      <main>
+        <h2>Examples of Project Artwork (also check Audio)</h2>
+        <div id="box">
+	  <ul id="slider">
+	    <li id="1">
+	      <img src="images/Block.png" alt="grey cube">
+	    <p><span>A simple grey cube. Stack them next to each other to create more powerful structures like walls, turrets, and more!</span></p>
+	    </li>
+
+	    <li id="2">
+	      <img src="images/Wall.png" alt="grey wall">
+	      <p><span>A basic grey wall. They can take a beating from evil pyramids, but don't expect them to win any fights on their own!</span></p>
+	    </li>
+
+	    <li id="3">
+	      <img src="images/Pause.png" alt="grey pause symbol">
+	      <p><span>A restful moment embodied by a pause symbol. Used and animated during the pause menu of a student game.</span></p>
+	    </li>
+
+	    <li id="4">
+	      <img src="images/Enemy.png" alt="brown pyramid">
+	      <p><span>A hostile brown pyramid. I programmed the behavior of these little guys. They ran down a line and tried to beat up your base.</span></p>
+	    </li>
+	  </ul>
+	  <ul id="thumbs">
+	    <li>
+	      <a href="#1">
+		<img src="images/Block.png" alt="grey cube">
+	      </a>
+	    </li>
+	    <li>
+	      <a href="#2">
+		<img src="images/Wall.png" alt="grey wall">
+	      </a>
+	    </li>
+	    <li>
+	      <a href="#3">
+		<img src="images/Pause.png" alt="grey pause symbol">
+	      </a>
+	    </li>
+	    <li>
+	      <a href="#4">
+		<img src="images/Enemy.png" alt="brown pyramid">
+	      </a>
+	    </li>
+	  </ul>
+	</div>
+	<section id="caption">
+	<p>All of the above images were used in a student project for DigiPen, showing willingness to learn tools outside my area of expertise such as Adobe Illustrator. Every game team member has to take up odd jobs and be proactive if they want to produce a good game!</p>
+	<p>The name of this game project was "Refactory" - it was built on the idea that you can place blocks on a grid (including stacking them for a kind of third dimension) and that the pattern you place them down determines what kind of structure they become. They'll fuse together or split apart into turrets, walls, slowing towers, etc. I had a major role in designing the game, and the enemy/structure interactions as well as user interface were designed by me. In addition, I had to learn the C++ interface for FMOD in order to implement an audio engine for the game, and all the sounds in the game were also made by me. I did not, however, create the wonderful parts of the game engine or the graphics engine. That was done by my wonderful teammates.</p>
+      </section>
+      </main>
+      <footer id="footer">
+      </footer>
+    </div>
+
+  </body>
+
+
+</html>

@@ -1,0 +1,73 @@
+<!-- File name:     audio.html
+     Author:        Seth Peterson
+     Date:          2020/2/25
+     lwtech e-mail: s-seth.peterson@lwtech.edu
+     Assignment:    Project
+     Description:
+
+ This file is the audio page for the Class Webpage
+//-->
+
+<!doctype html>
+
+<html>
+  <!-- This area provides instructions to the browser. -->
+  <head>
+    <meta charset = "UTF-8">
+    <title>HTML Class Audio</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/audio.css">
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/sharedFeatures.js"></script>
+    <script src="scripts/playSound.js"></script>
+    <!--iframe id="hoverNavItemFrame" src="audio/pageTurn.ogg" style="display:none"></iframe-->
+    <audio id="hoverNavItem" src="audio/navHover.ogg" type="audio/ogg" autostart="false"></audio>
+    <audio id="selectNavItem" src="audio/pageTurn.ogg" type="audio/ogg" autostart="false"></audio>
+  </head>
+
+  <body>
+    <div id = "wrapper">
+      <header id="header">
+	<img src = "images/pause.png" alt = "class logo">
+	<h1>Audio - Seth Peterson</h1>
+      </header>
+      <aside>
+	<img class="trinket" src="images/uc_enemy.png" alt="Pixelated image of a silver knight">
+	<img class="trinket" src="images/chest.png" alt="Pixelated image of a brown treasure chest">
+	<p>These guys were too small to be displayed on the projects page. They were part of my first major team game - Unchanged.</p>
+      </aside>
+      <main>
+      <h1 id="auth">Click the page to enable audio!</h1>
+        <section>
+	  <h2>Audio Samples</h2>
+	  <p>These were all created for student video game projects, but not all of them made it into the final result.</p>
+	  <div id="rough">
+	    <h3>Rough Melody</h3>
+	    <audio controls>
+	      <source src="audio/rough_pattern_1.ogg" type="audio/ogg">
+	      Your browser does not support the audio element. (ogg)
+	    </audio>
+	  </div id="rough">
+	  <div id="whistle">
+	    <h3>Whistle Tune Short</h3>
+	    <audio controls>
+	      <source src="audio/whistle_tune_short_1.ogg" type="audio/ogg">
+	      Your browser does not support the audio element. (ogg)
+	    </audio>
+	  </div>
+	  <div id="loop">
+	    <h3>Main Game Loop</h3>
+	    <audio controls>
+	      <source src="audio/menumelody_repeat.ogg" type="audio/ogg">
+	      Your browser does not support the audio element. (ogg)
+	    </audio>
+	  </div>
+        </section>
+      </main>
+      <footer id="footer">
+      </footer>
+    </div>
+  </body>
+
+
+</html>

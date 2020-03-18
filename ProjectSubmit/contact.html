@@ -1,0 +1,61 @@
+<!-- File name:     contact.html
+     Author:        Seth Peterson
+     Date:          2018/2/1
+     lwtech e-mail: s-seth.peterson@lwtech.edu
+     Assignment:    Final Project
+     Description:
+
+ This file is the contact page for the Class Webpage
+//-->
+
+<!doctype html>
+
+<html>
+  <!-- This area provides instructions to the browser. -->
+  <head>
+    <meta charset = "UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/sharedFeatures.js"></script>
+    <script src="email_list.js"></script>
+  </head>
+
+  <body>
+    <div id = "wrapper">
+      <header id="header">
+        <img src="images/pause.png" alt="class logo">
+	<h1>Contact - Seth Peterson</h1>
+      </header>
+      <main>
+        <section id="Submission">
+	  <h2>Fake Submission Form</h2>
+	  <form id="userForm" action="javascript:void(0)">
+	    <label for="fname">First Name</label>
+	    <input type="text" class="clientInput text" id="first_name" placeholder="Your name goes here..."><div></div><br/>
+
+	    <label for="lname">Last Name</label>
+	    <input type="text" class="clientInput text" id="last_name" placeholder="Your last name here..."><div></div><br/>
+
+	    <label for="subject">Subject</label>
+	    <textarea class="clientInput text" id="subject" placeholder="Write something..." style="height:200px"></textarea><div></div>
+	    <input type="submit" id="validate" value="Validate Form!" width="100">
+	    <button id="clear_entries">Clear Form</button>
+	  </form>
+
+        </section>
+      </main>
+      <footer id="footer">
+        <section>
+	  <img src="images/linkedIn.png" alt="linked profile" width="50">
+	  <img src="images/twitter.png" alt="twitter profile" width="50">
+	  <img src="images/instagram.jpg" alt="instagram profile" width="50">
+        </section>
+      </footer>
+    </div>
+
+  </body>
+
+
+</html>
