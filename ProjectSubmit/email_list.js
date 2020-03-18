@@ -4,7 +4,7 @@
  * \par    email: s-seth.peterson\@lwtech.edu
  * \par    Course: CSD 122
  * \par    Assigment: 5
- * \date   2020-02-18
+ * \date   2020-03-18
  * \brief
  *     This file contains event listeners for buttons in the email_list
  *     index.html file, implemented with jQuery.
