@@ -12,7 +12,7 @@
 
 <html>
   <!-- This area provides instructions to the browser. -->
-  <head>
+  <head> 
     <meta charset = "UTF-8">
     <title>Software Engineering Student - Seth Peterson</title>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
@@ -20,17 +20,14 @@
     <script src="scripts/sharedFeatures.js"></script>
   </head>
 
-  <body>
-    <div id = "wrapper">
-      <header id="header">
-	<img src="images/Pause.png" alt="class logo">
-	<h1>Seth Peterson's Home Page</h1>
-      </header>
-      <aside>
-	<img src="images/portrait.png" alt="Portrait of Seth Peterson">
-      </aside>
-      <main>
-        <section>
+  <body class="page-container">
+    <header id="header" class="container-section">
+      <img src="images/Pause.png" alt="class logo" class="prefix-column">
+      <h1>Seth Peterson's Home Page</h1>
+    </header>
+    <main class="container-section">
+      <div class="main-column">
+	<section>
 	  <h2>Welcome!</h2>
 	  <p>A bit about me:<br>
 	  I'm <u>Seth Peterson</u>. I enjoy developing software that <em>makes life more fun</em>, or software that <em>removes tedium from repetitive activities</em> - usually basic data collection and analysis.<br>
@@ -42,13 +39,15 @@
 	    <li><strong>Projects</strong> - this page contains examples of odd job art stuff I had to do, as well as some description of the projects I've worked on (namely Refactory).</li>
 	    <li><strong>Contact</strong> - This page exists to test very basic form validation, it does not actually contact anything.</li>
 	  </ul>
-        </section>
-      </main>
-      <footer id="footer">
-      </footer>
-    </div>
-
+	</section>
+      </div> <!-- closing main column container -->
+      <div class="aside-column">
+	<aside>
+	  <img src="images/portrait.png" alt="Portrait of Seth Peterson">
+	</aside>
+      </div> <!-- closing aside column container -->
+    </main>
+    <footer id="footer">
+    </footer>
   </body>
-
-
 </html>
