@@ -8,7 +8,7 @@
  This file is the CSS for the Class Webpage
 */
 
-/* Vertical flex container for all page elements */
+/* Column flex container for all page elements */
 .page-container
 {
   display: flex;
@@ -20,13 +20,23 @@
   padding: 40px 40px 40px 40px;
 }
 
-/* Horizontal flex container for all parts of the page */
-.container-section
+/* Row flex container for all parts of the page */
+.container-row
 {
   display: flex;
   flex-direction: row;
   background: grey;
   padding: 40px 40px 40px 40px;
+  align-items: flex-start;
+}
+
+.container-column
+{
+  display: flex;
+  flex-direction: column;
+  background: grey;
+  padding: 40px 40px 40px 40px;
+  align-items: center;
 }
 
 .prefix-column
@@ -37,7 +47,7 @@
 
 .main-column
 {
-  flex: 4;
+  flex: 5;
   order: 1;
 }
 
@@ -52,6 +62,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+nav
+{
+  flex: 1;
+  order: 2;
 }
 
 img
