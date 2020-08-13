@@ -57,17 +57,16 @@
   order: 2;
 }
 
+nav
+{
+  width: 100%;
+}
+
 #navList
 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-nav
-{
-  flex: 1;
-  order: 2;
 }
 
 img
