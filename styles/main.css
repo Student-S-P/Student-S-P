@@ -45,14 +45,15 @@
 {
   flex: 5;
   order: 1;
+  justify-content: space-between;
 }
 
 .aside-column
 {
-  margin-left: 10px;
+  margin-left: auto;
   flex: 1;
   order: 2;
-  flex-shrink: 3;
+  max-width: 10%;
 }
 
 header
