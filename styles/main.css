@@ -46,14 +46,17 @@
   flex: 5;
   order: 1;
   justify-content: space-between;
+  min-width: 400px;
 }
 
 .aside-column
 {
+  padding-left: 10px;
   margin-left: auto;
-  flex: 1;
+  flex-basis: auto;
+  flex-grow: 1;
   order: 2;
-  max-width: 10%;
+  max-width: 20%;
   min-width: 200px;
 }
 
