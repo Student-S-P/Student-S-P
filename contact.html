@@ -22,14 +22,15 @@
     <script src="email_list.js"></script>
   </head>
 
-  <body>
-    <div id = "wrapper">
-      <header id="header">
-        <img src="images/Pause.png" alt="class logo">
-	<h1>Contact - Seth Peterson</h1>
+  <body class="page-container">
+      <header id="header" class="container-column">
+        <img src="images/Pause.png" alt="class logo" class="prefix-column">
+	<h1 class="main-column">Contact - Seth Peterson</h1>
+      </div> <!-- end of name/pause row container -->
       </header>
-      <main>
+      <main class="container-column">
         <section id="Submission">
+	<div class="container-row">
 	  <h2>Fake Submission Form</h2>
 	  <form id="userForm" action="javascript:void(0)">
 	    <label for="fname">First Name</label>
@@ -43,18 +44,15 @@
 	    <input type="submit" id="validate" value="Validate Form!" width="100">
 	    <button id="clear_entries">Clear Form</button>
 	  </form>
-
         </section>
       </main>
       <footer id="footer">
-        <section>
+        <section class="container-row">
 	  <img src="images/linkedIn.png" alt="linked profile" width="50">
 	  <img src="images/twitter.png" alt="twitter profile" width="50">
 	  <img src="images/instagram.jpg" alt="instagram profile" width="50">
         </section>
       </footer>
-    </div>
-
   </body>
 
 

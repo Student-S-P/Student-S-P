@@ -109,6 +109,10 @@ img
   width: 100%;
   height: auto;
   margin: auto;
+}
+
+aside img
+{
   border-style: inset;
   min-width: 200px;
 }
