@@ -54,6 +54,7 @@
   flex: 1;
   order: 2;
   max-width: 10%;
+  min-width: 200px;
 }
 
 header
