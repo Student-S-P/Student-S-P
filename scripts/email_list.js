@@ -54,7 +54,7 @@ function joinList()
 
   // validate the first name entry  
   var idToCheck = ["first_name","last_name","subject"];
-  idToCheck.forEach(validate(name));
+  idToCheck.forEach(name => validate(name));
 
   // submit the form if all entries are valid
   if (isValid) {
@@ -86,19 +86,24 @@ function validate(name)
       $(nameAsID).next().text("Must be at least two adjacent non whitespace characters");
     }
   }
+  //Set styling to red if something's off
+  if (isValid == false )
+  {
+    $(nameAsID).next().prop("style").color = "red";
+  }
   return isValid;
 }
 
 // This function replaces all user text entries in the form with empty strings
-//   and returns the asterisks for the error text.
+//   and returns the asterisks for the error text, turning the text black.
 //   also returns focus to the first text box.
 function clearList()
 {
   //$("#email_address1").val("").next().text("*");
   //$("#email_address2").val("").next().text("*");
-  $("#first_name").val("").next().text("*");
-  $("#last_name").val("").next().text("*");
-  $("#subject").val("").next().text("*");
+  $("#first_name").val("").next().text("*").prop("style").color = "black";
+  $("#last_name").val("").next().text("*").prop("style").color = "black";
+  $("#subject").val("").next().text("*").prop("style").color = "black";
   $("#subject").focus();
 }
 
