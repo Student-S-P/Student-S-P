@@ -9,19 +9,18 @@
  */
 /**********************************************************************/
 
-main section#Submission
-{
-  height:500px;
-  width:90%;
-}
-
 input[type=text], select, textarea {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+}
+
+footer img
+{
+  width: 50px;
 }

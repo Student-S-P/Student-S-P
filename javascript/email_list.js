@@ -4,7 +4,7 @@
  * \par    email: s-seth.peterson\@lwtech.edu
  * \par    Course: CSD 122
  * \par    Assigment: 5
- * \date   2020-02-18
+ * \date   2020-08-25
  * \brief
  *     This file contains event listeners for buttons in the email_list
  *     index.html file, implemented with jQuery.
@@ -52,55 +52,41 @@ function joinList()
   }
   */
 
-  // Names are defined as at least two non whitespace characters.
-  var nameRegex = /^[^\s][^\s]+$/;
   // validate the first name entry  
-  if ($("#first_name").val() == "") {
-    $("#first_name").next().text("This field is required.");
-    isValid = false;
-  } 
-  else {
-    if(nameRegex.test($("#first_name").val()))
-    {
-      //Valid name message.
-      $("#first_name").next().text("");
-    } else {
-      $("#first_name").next().text("Must be two adjacent non whitespace characters");
-    }
-  }
-
-  if ($("#last_name").val() == "") {
-    $("#last_name").next().text("This field is required.");
-    isValid = false;
-  } 
-  else {
-    if(nameRegex.test($("#last_name").val()))
-    {
-      //Valid name message.
-      $("#last_name").next().text("");
-    } else {
-      $("#last_name").next().text("Must be two adjacent non whitespace characters");
-    }
-  }
-
-  if ($("#subject").val() == "") {
-    $("#subject").next().text("This field is required.");
-    isValid = false;
-  } 
-  else {
-    if(nameRegex.test($("#subject").val()))
-    {
-      //Valid name message.
-      $("#subject").next().text("");
-    } else {
-      $("#subject").next().text("Must be two adjacent non whitespace characters");
-    }
-  }
+  var idToCheck = ["first_name","last_name","subject"];
+  idToCheck.forEach(validate(name));
 
   // submit the form if all entries are valid
   if (isValid) {
     $("#email_form").submit(); 
   }
+}
+
+/* This function takes an ID for a form as a string and validates its
+ * contents.
+ */
+function validate(name)
+{
+  // Names are defined as at least two non whitespace characters.
+  var nameRegex = /^[^\s][^\s]+$/;
+
+  var nameAsID = '#' + name;
+  var isValid = true;
+  if ($(nameAsID).val() == "")
+  {
+    $(nameAsID).next().text("This field is required.");
+    isValid = false;
+  }
+  else {
+    if(nameRegex.test($(nameAsID).val()))
+    {
+      //Valid name message.
+      $(nameAsID).next().text("");
+    } else {
+      $(nameAsID).next().text("Must be at least two adjacent non whitespace characters");
+    }
+  }
+  return isValid;
 }
 
 // This function replaces all user text entries in the form with empty strings
