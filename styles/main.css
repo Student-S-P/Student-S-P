@@ -20,11 +20,14 @@
 }
 
 /* Row flex container for all parts of the page */
-.container-row
+@media screen and (min-width:640px)
 {
-  display: flex;
-  flex-direction: row;
-  padding: 20px 20px 20px 20px;
+  .container-row
+  {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 20px 20px 20px;
+  }
 }
 
 .container-column
