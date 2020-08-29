@@ -16,13 +16,17 @@ main h2
 
 .collage
 {
-  height=438px;
-  width=700px;
+  /*
+  min-height=438px;
+  min-width=700px;
+  */
 }
 .thumb
 {
+  /*
   height=50px;
   width=50px;
+  */
 }
 /*
 #slider > li > img
@@ -42,7 +46,6 @@ main h2
 
 #caption
 {
-  height: 200px;
   width:90%;
 }
 
@@ -76,7 +79,8 @@ main h2
   padding:0;
   list-style-type:none;
   width:100%;
-  height:438px;
+  min-width:700px;
+  min-height:438px;
   overflow:hidden;
 }
 
