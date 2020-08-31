@@ -118,7 +118,6 @@ nav ul li a:active
 
 img
 {
-  display: block;
   width: 100%;
   height: auto;
   margin: auto;
@@ -127,7 +126,7 @@ img
 aside img
 {
   border-style: inset;
-  min-width: 10em;
+  min-width: 10%;
 }
 
 footer
