@@ -45,6 +45,15 @@
     flex: 1;
     order: -1;
   }
+
+  .aside-column
+  {
+    padding-left: 10px;
+    flex-basis: auto;
+    flex-grow: 1;
+    order: 2;
+    max-width: 20%;
+  }
 }
 
 @media not screen and (min-width:640px)
@@ -55,6 +64,14 @@
     order: -1;
     width: 30%;
   }
+
+  .aside-column
+  {
+    padding-left: 10px;
+    flex-basis: auto;
+    flex-grow: 1;
+    order: 2;
+  }
 }
 
 .main-column
@@ -62,16 +79,6 @@
   flex: 5;
   order: 1;
   justify-content: space-between;
-}
-
-.aside-column
-{
-  padding-left: 10px;
-  margin-left: auto;
-  flex-basis: auto;
-  flex-grow: 1;
-  order: 2;
-  max-width: 20%;
 }
 
 header
