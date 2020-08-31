@@ -37,10 +37,24 @@
   padding: 20px 20px 20px 20px;
 }
 
-.prefix-column
+/* The next two only deal with pause button size at the top of the page */
+@media screen and (min-width:640px)
 {
-  flex: 1;
-  order: -1;
+  .prefix-column
+  {
+    flex: 1;
+    order: -1;
+  }
+}
+
+@media not screen and (min-width:640px)
+{
+  .prefix-column
+  {
+    flex: 1;
+    order: -1;
+    width: 30%;
+  }
 }
 
 .main-column
@@ -48,7 +62,6 @@
   flex: 5;
   order: 1;
   justify-content: space-between;
-  min-width: 400px;
 }
 
 .aside-column
@@ -59,7 +72,6 @@
   flex-grow: 1;
   order: 2;
   max-width: 20%;
-  min-width: 10em;
 }
 
 header
@@ -73,10 +85,9 @@ main
   background-color: rgba(230,160,100,1.0);
 }
 
-nav
+nav#navBar
 {
   background-color:rgba(205,205,205,1);
-  width: 100%;
   border: 1em solid; 
   border-image: linear-gradient(to bottom, rgba(14,14,15,1) 0%, rgba(205,205,205,1) 1%, rgba(205,205,205,1) 99%, rgba(14,14,15,1) 100%) 1; 
 }
@@ -84,8 +95,8 @@ nav
 #navList
 {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  padding: 0;
 }
 nav ul li a:link
 {
