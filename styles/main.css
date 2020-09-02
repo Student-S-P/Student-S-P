@@ -37,7 +37,7 @@
   padding: 20px 20px 20px 20px;
 }
 
-/* The next two only deal with pause button size at the top of the page */
+/* Large screen rules */
 @media screen and (min-width:640px)
 {
   .prefix-column
@@ -56,6 +56,7 @@
   }
 }
 
+/* Small screen rules */
 @media not screen and (min-width:640px)
 {
   .prefix-column
@@ -65,9 +66,9 @@
     width: 30%;
   }
 
+  /* This is no longer on the side, so padding isn't needed */
   .aside-column
   {
-    padding-left: 10px;
     flex-basis: auto;
     flex-grow: 1;
     order: 2;
@@ -128,12 +129,12 @@ img
   width: 100%;
   height: auto;
   margin: auto;
+  box-sizing: border-box;
 }
 
 aside img
 {
   border-style: inset;
-  min-width: 10%;
 }
 
 footer
