@@ -44,32 +44,52 @@ main h2
 }
 */
 
-#caption
-{
-  width:90%;
-}
-
 @keyframes fadeIn{
   0% {opacity:0;}
   50% {opacity:0.9;}
   100% {opacity:1;}
 }
 
-#box
+/* Large screens only */
+@media screen and (min-width:640px)
 {
-  background-color:#000;
-  position:relative;
-  text-align:left;
-  width:50%;
-  margin:30px auto 30px auto;
-  border:10px solid rgb(30,30,30);
-  box-shadow:rgb(20,20,20) 2px 2px 10px;
-  overflow:hidden;
+  #box
+  {
+    background-color:#000;
+    position:relative;
+    text-align:left;
+    width:50%;
+    margin:30px auto 30px auto;
+    border:10px solid rgb(30,30,30);
+    box-shadow:rgb(20,20,20) 2px 2px 10px;
+    overflow:hidden;
 
-  animation-name:fadeIn;
-  animation-duration:2s;
-  animation-iteration-count:1;
-  animation-delay:0s;
+    animation-name:fadeIn;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    animation-delay:0s;
+  }
+}
+
+/* Small screens only */
+@media not screen and (min-width:640px)
+{
+  #box
+  {
+    background-color:#000;
+    position:relative;
+    text-align:left;
+    width:60%;
+    margin:30px auto 30px auto;
+    border:10px solid rgb(30,30,30);
+    box-shadow:rgb(20,20,20) 2px 2px 10px;
+    overflow:hidden;
+
+    animation-name:fadeIn;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    animation-delay:0s;
+  }
 }
 
 #slider
