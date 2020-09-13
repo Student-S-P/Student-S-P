@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="styles/projects.css">
     <script src="scripts/jquery.js"></script>
     <script src="scripts/sharedFeatures.js"></script>
+    <script src="scripts/projectSwap.js"></script>
   </head>
 
   <body class="page-container">
@@ -30,8 +31,16 @@
 	<h1 class="main-column">Projects - Seth Peterson</h1>
       </div> <!-- end of name/pause row container -->
     </header>
-    <main class="container-column">
+    <main class="container-column" id="Refactory">
       <div class="main-column">
+	<div class="switch-field">
+	  <input type="radio" id="radio-one" name="projectSelector"
+					     value="Refactory" checked>
+	  <label for="radio-one">Refactory</label>
+	  <input type="radio" id="radio-two" name="projectSelector"
+					     value="Investment">
+	  <label for="radio-two">Investment</label>
+	</div>
 	<h2>Examples of Project Artwork (also check Audio)</h2>
 	<div id="box">
 	  <ul id="slider">

@@ -10,16 +10,15 @@
 
 "use strict";
 
-$('input:radio[name="projectSelector"]').change(
-  function() {
-    let nextProject = 'Refactory'
-    if ($(this).checked)
-    {
-      nextProject = this.value;
-    }
-    //Remove the current child of main.
-    $('body > main').addClass('Hidden').detach();
-    //Find the next main to use, make it visible, and place it.
-    $('main#'+nextProject).removeClass('Hidden').insertAfter('header');
+//Wrapper is necessary so the DOM elements exist.
+$(document).ready(function()
+  {
+    $('input[type=radio][name="projectSelector"]').change(
+      function() {
+	let nextProject = this.value;
+	//Remove the current child of main.
+	$('body > main').addClass('Hidden').detach();
+	//Find the next main to use, make it visible, and place it.
+	$('main#'+nextProject).removeClass('Hidden').insertAfter('header');
+      });
   });
-
