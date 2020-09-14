@@ -19,6 +19,12 @@
   padding: 30px 30px 30px 30px;
 }
 
+/* Used to hide elements, namely in projects page */
+.Hidden
+{
+  display: none !important;
+}
+
 /* Row flex container for all parts of the page */
 @media screen and (min-width:640px)
 {

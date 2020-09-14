@@ -16,12 +16,14 @@ $(document).ready(function()
     $('input[type=radio][name="projectSelector"]').change(
       function() {
 	let nextProject = this.value;
+	//Detach radio buttons.
+	var swapButton = $('div.switch-field').detach();
 	//Remove the current child of main.
 	var bodyOld = $('body > main').addClass('Hidden').detach();
 	//Find the next main to use, make it visible, and place it.
-	var bodyNew = $('main#'+nextProject).removeClass('Hidden').insertAfter('header');
-	//Now detach and reattach the radio buttons.
-	var swapButton = $(bodyOld+' > div.switch-field').detach();
-	$(swapButton).insertAfter('header');
+	var bodyNew = $('main#'+nextProject).removeClass('Hidden').detach().insertAfter('header');
+	//Reattach radio buttons
+	$(swapButton).insertAfter('body > main');
+	$(bodyOld).insertAfter('body');
       });
   });
