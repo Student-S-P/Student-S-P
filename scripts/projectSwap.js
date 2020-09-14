@@ -17,8 +17,11 @@ $(document).ready(function()
       function() {
 	let nextProject = this.value;
 	//Remove the current child of main.
-	$('body > main').addClass('Hidden').detach();
+	var bodyOld = $('body > main').addClass('Hidden').detach();
 	//Find the next main to use, make it visible, and place it.
-	$('main#'+nextProject).removeClass('Hidden').insertAfter('header');
+	var bodyNew = $('main#'+nextProject).removeClass('Hidden').insertAfter('header');
+	//Now detach and reattach the radio buttons.
+	var swapButton = $(bodyOld+' > div.switch-field').detach();
+	$(swapButton).insertAfter('header');
       });
   });
