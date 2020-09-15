@@ -13,6 +13,9 @@
 //Wrapper is necessary so the DOM elements exist.
 $(document).ready(function()
   {
+    //Hide all the main duplicates at the bottom of the page.
+    $('main').not('header + main').addClass('Hidden');
+
     $('input[type=radio][name="projectSelector"]').change(
       function() {
 	let nextProject = this.value;
