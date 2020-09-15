@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 90em;
+  max-width: 130em;
   background-color: rgb(5,7,5);
   padding: 30px 30px 30px 30px;
 }
