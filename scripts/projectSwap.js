@@ -19,11 +19,18 @@ $(document).ready(function()
 	//Detach radio buttons.
 	var swapButton = $('div.switch-field').detach();
 	//Remove the current child of main.
-	var bodyOld = $('body > main').addClass('Hidden').detach();
+	var bodyOld = $('header + main').addClass('Hidden').detach();
 	//Find the next main to use, make it visible, and place it.
-	var bodyNew = $('main#'+nextProject).removeClass('Hidden').detach().insertAfter('header');
+	var bodyNew = $('main, #'+nextProject).removeClass('Hidden').detach();
+	/*
+	console.log("New Body: ");
+	console.log(bodyNew);
+	console.log("Old Body: ");
+	console.log(bodyOld);
+	*/
+	$(bodyNew).insertAfter('header');
 	//Reattach radio buttons
-	$(swapButton).insertAfter('body > main');
+	$(swapButton).insertBefore('main > .main-column');
 	$(bodyOld).insertAfter('body');
       });
   });
