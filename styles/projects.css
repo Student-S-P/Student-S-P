@@ -9,11 +9,6 @@
  */
 /**********************************************************************/
 
-main h2
-{
-  padding-top:15px;
-}
-
 .switch-field {
     display: flex;
     margin-bottom: 36px;
@@ -58,36 +53,6 @@ main h2
 .switch-field label:last-of-type {
     border-radius: 0 4px 4px 0;
 }
-
-.collage
-{
-  /*
-  min-height=438px;
-  min-width=700px;
-  */
-}
-.thumb
-{
-  /*
-  height=50px;
-  width=50px;
-  */
-}
-/*
-#slider > li > img
-{
-  height=438px;
-  width=700px;
-  //width=62.5%
-}
-
-#thumbs > li > a > img
-{
-  height=50px;
-  width=50px;
-  //width=100%;
-}
-*/
 
 @keyframes fadeIn{
   0% {opacity:0;}
@@ -177,7 +142,7 @@ main h2
   list-style-type:none;
   background-color:rgb(0,0,0);
   position:relative;
-  width:inherit;
+  width:10.5em;
 }
 
 #thumbs a
