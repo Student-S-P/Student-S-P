@@ -19,8 +19,8 @@ $(document).ready(function() {
   //  3. Place it inside the header, just after the first h1 element
   $("#header").append("<nav id='navBar'></nav>");
   $("#navBar").append("<ul id=navList></ul>");
-  let references = ["index","audio","projects","contact"];
-  let labels = ["Home","Audio","Projects","Contact"];
+  let references = ["index","audio","art","projects","contact"];
+  let labels = ["Home","Audio","Art","Projects","Contact"];
   for(let i=0; i<references.length; ++i)
   {
     $("#navList").append("<li><a href='"+references[i]+".html'>"+labels[i]+"</a></li>");
