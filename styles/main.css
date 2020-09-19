@@ -94,6 +94,13 @@ header
   border-bottom:solid .2em rgb(55,55,55);
 }
 
+header h1
+{
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+}
+
 main
 {
   background-color: rgba(230,160,100,1.0);
