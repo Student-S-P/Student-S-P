@@ -61,25 +61,39 @@ div.main-column
 }
 /******** Used for swapping between projects ********/
 
+.box
+{
+  align-self:center;
+  width: 60%;
+  background-color:#000;
+  position:relative;
+  border:10px solid rgb(30,30,30);
+  box-shadow:rgb(20,20,20) 2px 2px 10px;
+  overflow:hidden;
+  animation-name:fadeIn;
+  animation-duration:2s;
+  animation-iteration-count:1;
+  animation-delay:0s;
+}
+
+/* This makes the container as full as we want before anything is visible
+ * */
+.box:before
+{
+  content: "";
+  float: left;
+  padding-top: 100%;
+}
+
 /* Large screens only */
 @media screen and (min-width:640px)
 {
-  .box
+  .box-container
   {
     display:flex;
     flex-direction:column;
     align-self:center; /* move self to the center */
-    background-color:#000;
-    position:relative;
-    width:50%;
-    border:10px solid rgb(30,30,30);
-    box-shadow:rgb(20,20,20) 2px 2px 10px;
-    overflow:hidden;
 
-    animation-name:fadeIn;
-    animation-duration:2s;
-    animation-iteration-count:1;
-    animation-delay:0s;
   }
   .slider p
   {
@@ -99,17 +113,6 @@ div.main-column
     flex-direction:column;
     align-self:center; /* move self to the center */
     background-color:#000;
-    position:relative;
-    /*text-align:left;*/
-    width:60%;
-    border:10px solid rgb(30,30,30);
-    box-shadow:rgb(20,20,20) 2px 2px 10px;
-    overflow:hidden;
-
-    animation-name:fadeIn;
-    animation-duration:2s;
-    animation-iteration-count:1;
-    animation-delay:0s;
   }
   .slider p
   {
