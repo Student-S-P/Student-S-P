@@ -9,6 +9,12 @@
  */
 /**********************************************************************/
 
+div.main-column
+{
+  display: flex;
+  flex-direction:column;
+}
+/******** Used for swapping between projects ********/
 .switch-field {
     display: flex;
     margin-bottom: 36px;
@@ -53,23 +59,19 @@
 .switch-field label:last-of-type {
     border-radius: 0 4px 4px 0;
 }
-
-@keyframes fadeIn{
-  0% {opacity:0;}
-  50% {opacity:0.9;}
-  100% {opacity:1;}
-}
+/******** Used for swapping between projects ********/
 
 /* Large screens only */
 @media screen and (min-width:640px)
 {
-  #box
+  .box
   {
+    display:flex;
+    flex-direction:column;
+    align-self:center; /* move self to the center */
     background-color:#000;
     position:relative;
-    text-align:left;
     width:50%;
-    margin:30px auto 30px auto;
     border:10px solid rgb(30,30,30);
     box-shadow:rgb(20,20,20) 2px 2px 10px;
     overflow:hidden;
@@ -79,28 +81,27 @@
     animation-iteration-count:1;
     animation-delay:0s;
   }
-  #slider p
+  .slider p
   {
+    align-self:end;
     position:absolute;
-    bottom:0;
-    left:0;
     color:rgb(255,255,255);
     background-color:rgba(0,0,0,1.0);
-    width:100%;
-    z-index:inherit;
   }
 }
 
 /* Small screens only */
 @media not screen and (min-width:640px)
 {
-  #box
+  .box-container
   {
+    display:flex;
+    flex-direction:column;
+    align-self:center; /* move self to the center */
     background-color:#000;
     position:relative;
-    text-align:left;
+    /*text-align:left;*/
     width:60%;
-    margin:30px auto 30px auto;
     border:10px solid rgb(30,30,30);
     box-shadow:rgb(20,20,20) 2px 2px 10px;
     overflow:hidden;
@@ -110,31 +111,41 @@
     animation-iteration-count:1;
     animation-delay:0s;
   }
-  #slider p
+  .slider p
   {
-    visibility: hidden;
+    align-self:end;
+    visibility: hidden; /* Hide this text on small screens */
     position:absolute;
-    bottom:0;
-    left:0;
     color:rgb(255,255,255);
     background-color:rgba(0,0,0,1.0);
-    width:100%;
-    z-index:inherit;
   }
 }
 
-#slider
+.slider
 {
-  border-radius:10px;
-  margin:0;
-  padding:0;
-  list-style-type:none;
-  width:100%;
-  overflow:hidden;
-  padding-bottom: 100%; /*Aspect ratio of images is 700:438 */
+  /*Aspect ratio of images is 700:438 */
+  padding-right:2em;
 }
 
-#thumbs
+.slider li
+{
+  display:flex;
+  justify-content:center;
+}
+
+.slider li img
+{
+}
+
+
+.slider span
+{
+  line-height:1.2em;
+  padding:2px;
+  display:block;
+}
+
+.thumbs
 {
   margin:0;
   padding:0;
@@ -145,7 +156,7 @@
   width:10.5em;
 }
 
-#thumbs img
+.thumbs img
 {
   transition: opacity 0.2s ease-in-out;
   border: 1px solid rgb(255,255,255);
@@ -158,35 +169,12 @@
   overflow:hidden;
 }
 
-#thumbs img:hover
+.thumbs img:hover
 {
   opacity:1;
   cursor: pointer;
 }
 
-#slider li
-{
-  width:90%;
-  height:inherit;
-  position:absolute;
-  left:10%;
-  padding-bottom: 1.5em;
-}
-
-#slider li img
-{
-  padding-top: 0.5em;
-  width:inherit;
-  height:inherit;
-}
-
-
-#slider span
-{
-  line-height:1.2em;
-  padding:2px;
-  display:block;
-}
 
 .fade-in
 {
