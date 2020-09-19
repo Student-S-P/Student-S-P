@@ -158,14 +158,6 @@
   overflow:hidden;
 }
 
-/*
-#thumbs a img
-{
-  width:inherit;
-  height:inherit;
-}
-*/
-
 #thumbs img:hover
 {
   opacity:1;
@@ -196,35 +188,37 @@
   display:block;
 }
 
-/*
-@keyframes moveTarget
+.fade-in
 {
-  0% {left:-70em;}
-  100% {left:3em;}
+  animation: fadeIn ease 1.0s;
+  -webkit-animation: fadeIn ease 1.0s;
+  -moz-animation: fadeIn ease 1.0s;
+  -o-animation: fadeIn ease 1.0s;
+  -ms-animation: fadeIn ease 1.0s;
 }
 
-#slider li:target
+@keyframes fadeIn
 {
-  animation-name:moveTarget;
-  animation-duration:0.3s;
-  animation-iteration-count:1;
-  z-index:10;
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-@keyframes moveIt
-{
-  0% {left:0em;}
-  50% {left:-70em;}
-  100% {left:-70em;
-  z-index: 5;}
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
 }
 
-#slider li:not(:target)
-{
-  animation-name:moveIt;
-  animation-duration:0.3s;
-  animation-iteration-count:1;
-  top:0;
-  left:0;
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
 }
-*/
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}

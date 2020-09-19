@@ -21,8 +21,12 @@ $(document).ready(function()
     $('ul#thumbs li img').click(
       function() {
 	let nextImage = $(this).attr('value');
-	$(nextImage).removeClass('Hidden').css('z-index',0);
-	$('ul#slider li').not(nextImage).css('z-index',-1);
+	//Make element visible.
+	$(nextImage).removeClass('Hidden');
+	//Start fade in sequence.
+	$('ul#slider li').not(nextImage).removeClass('fade-in').addClass('Hidden');
+	//Animate fading in.
+	$(nextImage).addClass('fade-in');
       });
   
 
