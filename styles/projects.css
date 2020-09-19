@@ -83,7 +83,7 @@ div.main-column
 {
   content: "";
   float: left;
-  padding-top: 85%;/*23em;*/
+  padding-top: 90%;/*23em;*/
 }
 
 /* Large screens only */
