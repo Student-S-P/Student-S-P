@@ -15,6 +15,16 @@ $(document).ready(function()
   {
     //Hide all the main duplicates at the bottom of the page.
     $('main').not('header + main').addClass('Hidden');
+    //Hide all the slides.
+    $('ul#slider li').addClass('Hidden');
+
+    $('ul#thumbs li img').click(
+      function() {
+	let nextImage = $(this).attr('value');
+	$(nextImage).removeClass('Hidden').css('z-index',0);
+	$('ul#slider li').not(nextImage).css('z-index',-1);
+      });
+  
 
     $('input[type=radio][name="projectSelector"]').change(
       function() {

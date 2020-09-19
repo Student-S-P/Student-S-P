@@ -1,13 +1,13 @@
 /**********************************************************************/
-/*! \file  audio.css
+/*! \file  art.css
  * \author Seth Peterson
- * \par    Course: CSD 122
- * \date   2020-03-16
+ * \date   2020-09-18
  * \brief
- *     This file contains style specific to the audio webpage.
+ *     This file contains style specific to the art webpage.
  */
 /**********************************************************************/
-main div
+
+img.trinket
 {
-  text-align:center;
+  width: auto;
 }
