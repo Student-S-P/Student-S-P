@@ -65,6 +65,7 @@ div.main-column
 {
   align-self:center;
   width: 60%;
+  max-width:25em;
   background-color:#000;
   position:relative;
   border:10px solid rgb(30,30,30);
@@ -82,7 +83,7 @@ div.main-column
 {
   content: "";
   float: left;
-  padding-top: 100%;
+  padding-top: 85%;/*23em;*/
 }
 
 /* Large screens only */
@@ -128,6 +129,7 @@ div.main-column
 {
   /*Aspect ratio of images is 700:438 */
   padding-right:2em;
+  margin:0;
 }
 
 .slider li
@@ -138,6 +140,8 @@ div.main-column
 
 .slider li img
 {
+  max-width: 20em;
+  max-height: 20em;
 }
 
 
