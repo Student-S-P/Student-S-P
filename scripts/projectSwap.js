@@ -16,7 +16,7 @@ $(document).ready(function()
     //Hide all the main duplicates at the bottom of the page.
     $('main').not('header + main').addClass('Hidden');
     //Hide all the slides.
-    $('.slider li').addClass('Hidden');
+    $('ul.slider li').addClass('Hidden');
 
     $('ul.thumbs li img').click(
       function() {
@@ -24,7 +24,7 @@ $(document).ready(function()
 	//Make element visible.
 	$(nextImage).removeClass('Hidden');
 	//Start fade in sequence.
-	$('ul.slider li').not(nextImage).removeClass('fade-in').addClass('Hidden');
+	$('.slider li').not(nextImage).removeClass('fade-in').addClass('Hidden');
 	//Animate fading in.
 	$(nextImage).addClass('fade-in');
       });
