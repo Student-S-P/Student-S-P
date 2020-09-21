@@ -1,9 +1,6 @@
 /**********************************************************************/
 /*! \file  email_list.js
  * \author Seth Peterson
- * \par    email: s-seth.peterson\@lwtech.edu
- * \par    Course: CSD 122
- * \par    Assigment: 5
  * \date   2020-08-25
  * \brief
  *     This file contains event listeners for buttons in the email_list

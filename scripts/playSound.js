@@ -1,9 +1,6 @@
 /**********************************************************************/
 /*! \file  playSound.js
  * \author Seth Peterson
- * \par    email: s-seth.peterson\@lwtech.edu
- * \par    Course: CSD 122
- * \par    Assigment: Project
  * \date   2020-02-25
  * \brief
  *     This file contains functions that interact with user input.

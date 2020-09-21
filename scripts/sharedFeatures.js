@@ -1,8 +1,6 @@
 /**********************************************************************/
 /*! \file  sharedFeatures.js
  * \author Seth Peterson
- * \par    Course: CSD 122
- * \par    Assigment: Final Project
  * \date   2020-03-17
  * \brief
  *     This file contains jQuery code that generates the nav and footer
