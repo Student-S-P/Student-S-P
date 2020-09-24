@@ -8,6 +8,7 @@
 /**********************************************************************/
 main.container-row
 {
+  padding: 5px 5px 5px 5px;
   justify-content:space-evenly;
 }
 
@@ -16,7 +17,9 @@ main div
   text-align:center;
 }
 
-div.main-column
+aside.aside-column
 {
-  flex:0.3;
+  text-align:center;
+  max-width:none;
+  flex-grow:auto;
 }
