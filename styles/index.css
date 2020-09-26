@@ -2,3 +2,8 @@ aside.aside-column
 {
   max-width:40%;
 }
+
+ul li
+{
+  margin-bottom:0.5em;
+}
