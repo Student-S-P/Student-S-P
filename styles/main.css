@@ -23,15 +23,10 @@
   display: none !important;
 }
 
-/* Row flex container for all parts of the page */
-@media screen and (min-width:640px)
+
+.shadow
 {
-  .container-row
-  {
-    display: flex;
-    flex-direction: row;
-    padding: 20px 20px 20px 20px;
-  }
+  box-shadow: rgb(20,20,20) 2px 2px 10px
 }
 
 .container-column
@@ -44,6 +39,13 @@
 /* Large screen rules */
 @media screen and (min-width:640px)
 {
+  .container-row
+  {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 20px 20px 20px;
+  }
+
   .prefix-column
   {
     flex: 1;
@@ -69,6 +71,12 @@
     flex: 1;
     order: -1;
     width: 30%;
+  }
+
+  header .prefix-column
+  {
+    float:left;
+    max-width: 20%;
   }
 
   /* This is no longer on the side, so padding isn't needed */
@@ -147,7 +155,7 @@ img
 
 aside img
 {
-  border-style: inset;
+  box-shadow: rgb(20,20,20) 2px 2px 10px;
 }
 
 footer
