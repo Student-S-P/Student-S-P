@@ -47,7 +47,7 @@ $(document).ready(function()
 	*/
 	$(bodyNew).insertAfter('header');
 	//Reattach radio buttons
-	$(swapButton).insertBefore('main > .main-column');
+	$(swapButton).prependTo('main > div.main-column');
 	$(bodyOld).insertAfter('body');
       });
   });

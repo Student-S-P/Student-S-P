@@ -14,7 +14,7 @@
   align-items: center;
   max-width: 130em;
   background-color: rgb(5,7,5);
-  padding: 30px 30px 30px 30px;
+  padding: 10px 10px 10px 10px;
 }
 
 /* Used to hide elements, namely in projects page */
@@ -33,7 +33,6 @@
 {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px 20px 20px;
 }
 
 /* Large screen rules */
@@ -50,7 +49,7 @@
   {
     flex: 1;
     order: -1;
-    max-width: 30%;
+    max-width: 20%;
   }
 
   .aside-column
@@ -93,6 +92,7 @@
   flex: 5;
   order: 1;
   justify-content: space-between;
+  padding: 15px 15px 15px 15px;
 }
 
 header
@@ -111,12 +111,13 @@ header h1
 main
 {
   background-color: rgba(230,160,100,1.0);
+  box-shadow: inset rgb(20,20,20) 2px 2px 15px;
 }
 
 nav#navBar
 {
   background-color:rgba(205,205,205,1);
-  border: 1em solid; 
+  border: 0.7em solid; 
   border-image: linear-gradient(to bottom, rgba(14,14,15,1) 0%, rgba(205,205,205,1) 1%, rgba(205,205,205,1) 99%, rgba(14,14,15,1) 100%) 1; 
 }
 

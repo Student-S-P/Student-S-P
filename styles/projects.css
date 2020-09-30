@@ -15,7 +15,6 @@ div.main-column
 /******** Used for swapping between projects ********/
 .switch-field {
     display: flex;
-    margin-bottom: 36px;
     overflow: hidden;
 }
 
