@@ -32,7 +32,8 @@ $(document).ready(function() {
   $("nav ul li a").mouseenter(playSound);
 
   $(document).click(function() {
-    $("#auth").hide();
+    //$("#auth").hide();
+    $("#auth").html("Audio enabled!");
   });
 });
 
