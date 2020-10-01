@@ -15,6 +15,7 @@
   max-width: 130em;
   background-color: rgb(5,7,5);
   padding: 10px 10px 10px 10px;
+  margin: 0 auto;
 }
 
 /* Used to hide elements, namely in projects page */
